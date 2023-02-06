@@ -1,0 +1,54 @@
+---
+import ecommerceCoder from "../../data/works/ecommerceCoder.json";
+import { CgArrowRight } from "react-icons/cg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { RiExternalLinkFill } from "react-icons/ri";
+import { BsArrowLeftCircleFill } from "react-icons/bs";
+
+const [
+  {
+    title,
+    description,
+    description2,
+    mainIMG,
+    itemListIMG,
+    itemDetailIMG,
+    cartIMG,
+  },
+] = ecommerceCoder;
+---
+
+<div class="workContainer">
+  <div class="workContainer__information">
+    <a href="/">
+      <span>Works</span>
+    </a>
+    <MdOutlineKeyboardArrowRight
+      className="workContainer__MdOutlineKeyboardArrowRight"
+    />
+    <h2>{title} <span class="workContainer__year">2022</span></h2>
+  </div>
+  <div class="workContainer__paragraphs">
+    <p>{description}</p>
+    <p>{description2}</p>
+  </div>
+  <div class="workContainer__tools">
+    <div class="workContainer__span">
+      <span class="workContainer__badge">WEBSITE</span>
+      <a href="https://weblucho.vercel.app/" target="_blank">
+        https://weblucho.vercel.app/
+      </a>
+      <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
+    </div>
+    <p>
+      <span class="workContainer__badge"> STACK</span>
+      Reactjs / React-icons / React-router-dom / ChakraUI / Formik / Vercel
+    </p>
+  </div>
+  <div class="workContainer__imgs">
+    <img src={mainIMG} alt="MainIMG" />
+    <img src={itemListIMG} alt="MainIMG" />
+    <img src={itemDetailIMG} alt="SedesIMG" />
+    <img src={cartIMG} alt="FooterIMG" />
+  </div>
+</div>

@@ -1,0 +1,15 @@
+@import "variables";
+
+// Copyright
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  color: $colorPrimary;
+  font-size: 15px;
+
+  span {
+    padding: 0px 5px 0px 5px;
+  }
+}

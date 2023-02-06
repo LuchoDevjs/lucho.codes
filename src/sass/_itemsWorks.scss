@@ -1,0 +1,44 @@
+@import "variables";
+
+// Projects
+.projects {
+  // height: 100vh;
+  &__title {
+    text-align: center;
+    font-size: $fontTitle;
+    color: $colorPrimary;
+    font-weight: $fontWeight;
+  }
+  &__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__imgsChildren {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    h2 {
+      font-size: 20px;
+      color: $colorSecondary;
+      margin: 10px 0px 10px 0px;
+    }
+    img {
+      border-radius: 1rem;
+      width: 70%;
+      margin: auto;
+      // filter: grayscale(1);
+    }
+    img:hover {
+      transform: scale(0.96);
+      transition: all 400ms ease;
+    }
+    p {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

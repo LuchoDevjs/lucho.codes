@@ -1,0 +1,78 @@
+---
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+---
+
+<h1 class="title">Educación</h1>
+<section class="slider">
+  <div class="slider__container container">
+    <FaAngleLeft className="slider__arrow" id="before" size={30} />
+
+    <section class="slider__body slider__body--show" data-id="1">
+      <figure class="slider__picture">
+        <img
+          src="/assets/img/certificates/DW.png"
+          alt=" certificado desarrollo web"
+          class="slider__img"
+        />
+      </figure>
+    </section>
+    <section class="slider__body" data-id="2">
+      <figure class="slider__picture">
+        <img
+          src="/assets/img/certificates/JS.png"
+          alt=" certificado desarrollo web"
+          class="slider__img"
+        />
+      </figure>
+    </section>
+
+    <section class="slider__body" data-id="3">
+      <figure class="slider__picture">
+        <img
+          src="/assets/img/certificates/REACTJS.png"
+          alt=" certificado desarrollo web"
+          class="slider__img"
+        />
+      </figure>
+    </section>
+
+    <section class="slider__body" data-id="4">
+      <figure class="slider__picture">
+        <img
+          src="/assets/img/certificates/NODE.jpeg"
+          alt=" certificado desarrollo web"
+          class="slider__img"
+        />
+      </figure>
+    </section>
+    <FaAngleRight className="slider__arrow" id="next" size={30} />
+  </div>
+</section>
+
+<script>
+  (function () {
+    const sliders = [...document.querySelectorAll(".slider__body")];
+    const arrowBefore = document.querySelector("#before");
+    const arrowNext = document.querySelector("#next");
+
+    let value;
+
+    arrowNext.addEventListener("click", () => changePosition(1));
+    arrowBefore.addEventListener("click", () => changePosition(-1));
+
+    function changePosition(change) {
+      const currentElement = Number(
+        document.querySelector(".slider__body--show").dataset.id
+      );
+
+      value = currentElement;
+      value += change;
+      if (value === 0 || value == sliders.length + 1) {
+        value = value === 0 ? sliders.length : 1;
+      }
+
+      sliders[currentElement - 1].classList.toggle("slider__body--show");
+      sliders[value - 1].classList.toggle("slider__body--show");
+    }
+  })();
+</script>

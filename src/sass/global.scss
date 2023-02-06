@@ -1,0 +1,25 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap");
+@import "main";
+@import "skills";
+@import "itemsWorks";
+@import "about";
+@import "copyright";
+@import "education";
+@import "reset";
+@import "variables";
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  color: var(--color);
+  opacity: 0.8;
+  hyphens: auto;
+  // background-color: red;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}

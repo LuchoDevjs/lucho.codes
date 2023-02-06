@@ -1,0 +1,14 @@
+[
+  {
+    "img": "/assets/img/ecommerceCoder/project2.png",
+    "title": "Ecommerce CoderHouse",
+    "description": "Un sitio web personal de ventas de gorras.",
+    "link": "/ecommercecoder/"
+  },
+  {
+    "img": "/assets/img/landingPageJS/project1.png",
+    "title": "Landing Page JS",
+    "description": "Un sitio web de la agencia Juana Sotelo para inscribirse en sus cursos de micropigmentación",
+    "link": "/landingpagejs/"
+  }
+]

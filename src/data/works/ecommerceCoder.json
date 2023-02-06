@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Ecommerce CoderHouse",
+    "description": "Un sitio web personal de ventas de gorras.",
+    "description2": "Este proyecto es un ecommerce de gorras que desarrollé mientras cursaba ReactJS en CoderHouse. Fue una experiencia enriquecedora que me permitió aplicar y profundizar los conocimientos adquiridos en el curso, así como también aprender nuevas habilidades y tecnologías. Al trabajar en este proyecto, pude abarcar diferentes aspectos relacionados con el desarrollo web, como el diseño de la interfaz de usuario, la implementación de carritos de compra, la integración con sistemas de pagos y la optimización de la velocidad de la página.",
+    "mainIMG": "/assets/img/ecommerceCoder/main.png",
+    "itemListIMG": "/assets/img/ecommerceCoder/itemList.png",
+    "itemDetailIMG": "/assets/img/ecommerceCoder/itemDetail.png",
+    "cartIMG": "/assets/img/ecommerceCoder/cart.png"
+  }
+]

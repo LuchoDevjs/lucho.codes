@@ -1,0 +1,78 @@
+@import "variables";
+
+.workContainer {
+  margin-top: 50px;
+  &__arrowLeft {
+    margin-top: 20px;
+    color: $colorSecondary;
+  }
+  &__information {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+      color: $colorSecondary;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    a:hover {
+      color: $colorSecondary;
+      text-decoration: underline;
+    }
+  }
+  &__year {
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 3px;
+    color: $colorSecondary;
+    background-color: #4d3753;
+  }
+  &__paragraphs p {
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  &__MdOutlineKeyboardArrowRight {
+    width: 2%;
+  }
+  &__tools {
+    a {
+      color: $colorSecondary;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 6px;
+  }
+  &__badge {
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 3px;
+    color: #93dbab;
+    background-color: #33403a;
+    margin-right: 8px;
+  }
+  &__iconLink {
+    color: $colorSecondary;
+  }
+  &__imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 90%;
+      margin-top: 25px;
+      border-radius: 10px;
+    }
+  }
+}
