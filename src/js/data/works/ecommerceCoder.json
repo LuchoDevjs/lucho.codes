@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Ecommerce CoderHouse",
+    "description": "A personal cap sales website.",
+    "description2": "This project is a hat e-commerce that I developed while taking the ReactJS course at CoderHouse. It was a enriching experience that allowed me to apply and deepen the knowledge acquired in the course, as well as learn new skills and technologies. By working on this project, I was able to cover different aspects related to web development, such as user interface design, implementation of shopping carts, integration with payment systems, and optimization of page speed.",
+    "itemDetailIMG": "/assets/img/ecommerceCoder/itemDetail.jpg",
+    "cartIMG": "/assets/img/ecommerceCoder/cart.jpg",
+    "formIMG": "/assets/img/ecommerceCoder/form.jpg"
+  }
+]

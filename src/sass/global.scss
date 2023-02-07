@@ -8,18 +8,26 @@
 @import "copyright";
 @import "education";
 @import "reset";
+@import "waves";
 @import "variables";
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
   font-size: 100%;
   color: var(--color);
-  opacity: 0.8;
   hyphens: auto;
-  // background-color: red;
 }
 
 .container {
   max-width: 768px;
   margin: 0 auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #c175ff;
+  border-radius: 5px;
 }

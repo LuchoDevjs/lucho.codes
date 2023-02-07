@@ -1,9 +1,9 @@
 ---
-import landingJS from "../../data/works/landingPageJS.json";
+import landingJS from "../../js/data/works/landingPageJS.json";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md/index.js";
 import { RiExternalLinkFill } from "react-icons/ri/index.js";
 
-const [{ title, description, description2, mainIMG, sedesIMG, footerIMG }] =
+const [{ title, description, description2, sedesIMG, footerIMG, formIMG }] =
   landingJS;
 ---
 
@@ -31,14 +31,21 @@ const [{ title, description, description2, mainIMG, sedesIMG, footerIMG }] =
       </a>
       <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
     </div>
+    <div class="workContainer__span">
+      <span class="workContainer__badge">CODE</span>
+      <a href="https://github.com/LuchoDevjs/LandingPageJS" target="_blank">
+        https://github.com/LuchoDevjs/LandingPageJS/
+      </a>
+      <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
+    </div>
     <p>
       <span class="workContainer__badge"> STACK</span>
       Reactjs / React-icons / Material-UI / Formik / SweetAlert2 / Vercel
     </p>
   </div>
   <div class="workContainer__imgs">
-    <img src={mainIMG} alt="MainIMG" />
     <img src={sedesIMG} alt="SedesIMG" />
     <img src={footerIMG} alt="FooterIMG" />
+    <img src={formIMG} alt="FormIMG" />
   </div>
 </div>

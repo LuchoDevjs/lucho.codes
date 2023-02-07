@@ -3,11 +3,6 @@
 /* Definimos las Custom properties */
 :root {
   background-color: $background;
-  // background-image: radial-gradient(
-  //   circle,
-  //   rgba(0, 0, 0, 0) 0%,
-  //   rgba(0, 0, 0, 0.8) 100%
-  // );
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,16 +20,13 @@
   }
 }
 
-/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-@media (prefers-contrast: high) {
-  :root {
-  }
-}
-
 /* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
+    -webkit-animation: none !important;
     animation: none !important;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
   }
 }
@@ -63,9 +55,7 @@ figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  /* (Opcional) */
   object-fit: cover;
-  /* (Opcional) */
   object-position: center center;
 }
 
@@ -123,6 +113,10 @@ q:after {
 }
 
 /* (Opcional) Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
@@ -141,7 +135,6 @@ label {
   background-color: transparent;
   color: inherit;
   display: block;
-  /* (Opcional) */
   appearance: none;
 }
 
@@ -155,9 +148,12 @@ td {
 
 /* Evitamos problemas con los SVG */
 svg {
-  width: 100%;
   display: block;
   fill: currentColor;
+}
+
+::-moz-selection {
+  color: black;
 }
 
 ::selection {

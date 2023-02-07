@@ -1,19 +1,10 @@
 ---
-import ecommerceCoder from "../../data/works/ecommerceCoder.json";
+import ecommerceCoder from "../../js/data/works/ecommerceCoder.json";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md/index.js";
 import { RiExternalLinkFill } from "react-icons/ri/index.js";
 
-const [
-  {
-    title,
-    description,
-    description2,
-    mainIMG,
-    itemListIMG,
-    itemDetailIMG,
-    cartIMG,
-  },
-] = ecommerceCoder;
+const [{ title, description, description2, itemDetailIMG, cartIMG, formIMG }] =
+  ecommerceCoder;
 ---
 
 <div class="workContainer">
@@ -38,15 +29,24 @@ const [
       </a>
       <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
     </div>
+    <div class="workContainer__span">
+      <span class="workContainer__badge">CODE</span>
+      <a
+        href="https://github.com/LuchoDevjs/PryFinalReactLuciano"
+        target="_blank"
+      >
+        https://github.com/LuchoDevjs/PryFinalReactLuciano/
+      </a>
+      <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
+    </div>
     <p>
       <span class="workContainer__badge"> STACK</span>
       Reactjs / React-icons / React-router-dom / ChakraUI / Formik / Vercel
     </p>
   </div>
   <div class="workContainer__imgs">
-    <img src={mainIMG} alt="MainIMG" />
-    <img src={itemListIMG} alt="MainIMG" />
-    <img src={itemDetailIMG} alt="SedesIMG" />
-    <img src={cartIMG} alt="FooterIMG" />
+    <img src={itemDetailIMG} alt="itemDetailIMG" />
+    <img src={cartIMG} alt="cartIMG" />
+    <img src={formIMG} alt="formIMG" />
   </div>
 </div>

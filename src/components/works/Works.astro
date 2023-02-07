@@ -1,19 +1,19 @@
 ---
-import works from "../../data/works/works.json";
+import works from "../../js/data/works/works.json";
 ---
 
 <div class="projects">
-  <h1 class="projects__title" id="projects">Mis trabajos</h1>
+  <h1 class="projects__title" id="projects">My works</h1>
 
   <div class="projects__imgs">
     {
       works.map((work) => (
         <div class="projects__imgsChildren">
+          <h2>{work.title}</h2>
+          <p class="projects__paragraph">{work.description}</p>
           <a href={work.link}>
             <img src={work.img} alt={work.title} class="projects__img" />
           </a>
-          <h2>{work.title}</h2>
-          <p class="projects__paragraph">{work.description}</p>
         </div>
       ))
     }

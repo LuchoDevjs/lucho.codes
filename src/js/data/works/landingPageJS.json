@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Landing Page JS",
+    "description": "A website of the Juana Sotelo agency to enroll in its micropigmentation courses.",
+    "description2": "This project is a landing page I designed for my mother Juana Sotelo's company, which specializes in micropigmentation. As I am passionate about technology and the web, I decided to create a landing page to make it easier for potential clients to sign up for her micropigmentation courses. The landing page I designed is easy to access and navigate, and clearly presents all the necessary information so that interested individuals can make an informed decision about enrolling in the courses.",
+    "sedesIMG": "/assets/img/landingPageJS/sedes.jpg",
+    "footerIMG": "/assets/img/landingPageJS/footer.jpg",
+    "formIMG": "/assets/img/landingPageJS/form.jpg"
+  }
+]

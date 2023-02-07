@@ -1,11 +1,18 @@
 ---
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa/index.js";
+import {
+  HiOutlineArrowNarrowLeft,
+  HiOutlineArrowNarrowRight,
+} from "react-icons/hi/index.js";
 ---
 
-<h1 class="title">Educación</h1>
+<h1 class="title" data-aos="fade-right">My education</h1>
 <section class="slider">
   <div class="slider__container container">
-    <FaAngleLeft className="slider__arrow" id="before" size={30} />
+    <HiOutlineArrowNarrowLeft
+      className="slider__arrow left"
+      id="before"
+      size={30}
+    />
 
     <section class="slider__body slider__body--show" data-id="1">
       <figure class="slider__picture">
@@ -45,7 +52,11 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa/index.js";
         />
       </figure>
     </section>
-    <FaAngleRight className="slider__arrow" id="next" size={30} />
+    <HiOutlineArrowNarrowRight
+      className="slider__arrow right"
+      id="next"
+      size={30}
+    />
   </div>
 </section>
 
@@ -60,7 +71,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa/index.js";
     arrowNext.addEventListener("click", () => changePosition(1));
     arrowBefore.addEventListener("click", () => changePosition(-1));
 
-    function changePosition(change) {
+    const changePosition = (change) => {
       const currentElement = Number(
         document.querySelector(".slider__body--show").dataset.id
       );
@@ -73,6 +84,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa/index.js";
 
       sliders[currentElement - 1].classList.toggle("slider__body--show");
       sliders[value - 1].classList.toggle("slider__body--show");
-    }
+    };
   })();
+  const animatedImage = document.querySelectorAll(".slider__img");
 </script>

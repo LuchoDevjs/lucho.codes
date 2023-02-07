@@ -76,3 +76,20 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .workContainer {
+    &__information {
+      padding: 15px;
+    }
+    &__paragraphs {
+      padding: 15px;
+    }
+    &__tools {
+      padding: 15px;
+    }
+    &__MdOutlineKeyboardArrowRight {
+      width: 5%;
+    }
+  }
+}

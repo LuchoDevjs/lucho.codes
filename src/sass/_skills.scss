@@ -1,8 +1,6 @@
 @import "variables";
 
-// Skills
 .skills {
-  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +11,7 @@
     color: $colorPrimary;
     font-weight: $fontWeight;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
@@ -20,135 +19,51 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  &__css {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #264de4;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__js {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #f7df1c;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__nodejs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #68a063;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__mongodb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #13a04b;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__express {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    padding: 15px;
+  $colors: (
+    css: #264de4,
+    js: #f7df1c,
+    nodejs: #68a063,
+    mongodb: #13a04b,
+    express: #fff,
+    reactjs: #61d9fb,
+    sass: #cd6799,
+    git: #f05033,
+    github: #fff,
+    redux: #624097,
+  );
 
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
+  @each $name, $color in $colors {
+    &__#{$name} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $color;
+      padding: 15px;
+      font-size: 75px;
+      width: 20%;
+
+      p {
+        font-size: 20px;
+        margin: 20px;
+        color: white;
+        text-align: center;
+      }
     }
   }
-  &__reactjs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #61d9fb;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__sass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #cd6799;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__git {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #f05033;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__github {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 20px;
-      color: white;
-    }
-  }
-  &__redux {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #624097;
-    padding: 15px;
-    p {
-      font-size: 20px;
-      margin: 15px;
-      color: white;
+}
+
+@media (max-width: 550px) {
+  .skills {
+    $elements: css, js, nodejs, mongodb, express, reactjs, redux, sass, git,
+      github;
+
+    @each $element in $elements {
+      &__#{$element} {
+        font-size: 60px;
+        padding: 1px;
+        width: 40%;
+      }
     }
   }
 }

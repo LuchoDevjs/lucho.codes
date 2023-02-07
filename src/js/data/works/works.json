@@ -1,0 +1,14 @@
+[
+  {
+    "img": "/assets/img/ecommerceCoder/project2.jpg",
+    "title": "Ecommerce CoderHouse",
+    "description": "A personal cap sales website.",
+    "link": "/ecommercecoder/"
+  },
+  {
+    "img": "/assets/img/landingPageJS/project1.jpg",
+    "title": "Landing Page JS",
+    "description": "A website of the Juana Sotelo agency to enroll in its micropigmentation courses.",
+    "link": "/landingpagejs/"
+  }
+]
