@@ -1,15 +1,14 @@
 @import "variables";
 
-// Copyright
 .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px 20px 0px;
+  margin: 1.25rem 0rem 1.25rem 0rem;
   color: $colorPrimary;
-  font-size: 15px;
+  font-size: 0.9375rem;
 
   span {
-    padding: 0px 5px 0px 5px;
+    padding: 0rem 0.3125rem 0rem 0.3125rem;
   }
 }

@@ -3,9 +3,32 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi/index.js";
+
+const certificateData = [
+  {
+    id: 1,
+    src: "/assets/img/certificates/DW.png",
+    alt: "certificado desarrollo web",
+  },
+  {
+    id: 2,
+    src: "/assets/img/certificates/JS.png",
+    alt: "certificado javascript",
+  },
+  {
+    id: 3,
+    src: "/assets/img/certificates/REACTJS.png",
+    alt: "certificado reactjs",
+  },
+  {
+    id: 4,
+    src: "/assets/img/certificates/NODE.jpeg",
+    alt: "certificado nodejs",
+  },
+];
 ---
 
-<h1 class="title" data-aos="fade-right">My education</h1>
+<h1 class="title" id="education">My education</h1>
 <section class="slider">
   <div class="slider__container container">
     <HiOutlineArrowNarrowLeft
@@ -14,44 +37,24 @@ import {
       size={30}
     />
 
-    <section class="slider__body slider__body--show" data-id="1">
-      <figure class="slider__picture">
-        <img
-          src="/assets/img/certificates/DW.png"
-          alt=" certificado desarrollo web"
-          class="slider__img"
-        />
-      </figure>
-    </section>
-    <section class="slider__body" data-id="2">
-      <figure class="slider__picture">
-        <img
-          src="/assets/img/certificates/JS.png"
-          alt=" certificado desarrollo web"
-          class="slider__img"
-        />
-      </figure>
-    </section>
+    {
+      certificateData.map((certificate) => (
+        <section
+          class="slider__body"
+          key={certificate.id}
+          data-id={certificate.id}
+        >
+          <figure class="slider__picture">
+            <img
+              src={certificate.src}
+              alt={certificate.alt}
+              class="slider__img"
+            />
+          </figure>
+        </section>
+      ))
+    }
 
-    <section class="slider__body" data-id="3">
-      <figure class="slider__picture">
-        <img
-          src="/assets/img/certificates/REACTJS.png"
-          alt=" certificado desarrollo web"
-          class="slider__img"
-        />
-      </figure>
-    </section>
-
-    <section class="slider__body" data-id="4">
-      <figure class="slider__picture">
-        <img
-          src="/assets/img/certificates/NODE.jpeg"
-          alt=" certificado desarrollo web"
-          class="slider__img"
-        />
-      </figure>
-    </section>
     <HiOutlineArrowNarrowRight
       className="slider__arrow right"
       id="next"
@@ -67,6 +70,9 @@ import {
     const arrowNext = document.querySelector("#next");
 
     let value;
+
+    // Set the "slider__body--show" class on the first element of the "sliders" array
+    sliders[0].classList.add("slider__body--show");
 
     arrowNext.addEventListener("click", () => changePosition(1));
     arrowBefore.addEventListener("click", () => changePosition(-1));

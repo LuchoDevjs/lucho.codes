@@ -10,8 +10,8 @@
     font-size: $fontTitle;
     color: $colorPrimary;
     font-weight: $fontWeight;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
   }
   &__list {
     display: flex;
@@ -39,13 +39,13 @@
       align-items: center;
       flex-direction: column;
       color: $color;
-      padding: 15px;
-      font-size: 75px;
+      padding: 0.9375rem;
+      font-size: 4.6875rem;
       width: 20%;
 
       p {
-        font-size: 20px;
-        margin: 20px;
+        font-size: 1.25rem;
+        margin: 1.25rem;
         color: white;
         text-align: center;
       }
@@ -53,15 +53,15 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
   .skills {
     $elements: css, js, nodejs, mongodb, express, reactjs, redux, sass, git,
       github;
 
     @each $element in $elements {
       &__#{$element} {
-        font-size: 60px;
-        padding: 1px;
+        font-size: 3.75rem;
+        padding: 0.0625rem;
         width: 40%;
       }
     }

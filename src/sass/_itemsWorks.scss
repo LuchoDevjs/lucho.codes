@@ -19,11 +19,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 1.875rem;
     h2 {
-      font-size: 20px;
+      font-size: 1.25rem;
       color: $colorSecondary;
-      margin: 10px 0px 10px 0px;
+      margin: 0.625rem 0rem 0.625rem 0rem;
     }
     img {
       border-radius: 1rem;
@@ -34,9 +34,9 @@
       transition: all 400ms ease;
     }
     p {
-      font-size: 15px;
+      font-size: 0.9375rem;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
   }
 }
