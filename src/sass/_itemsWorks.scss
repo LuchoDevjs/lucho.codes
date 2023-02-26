@@ -5,7 +5,7 @@
   &__title {
     text-align: center;
     font-size: $fontTitle;
-    color: $colorPrimary;
+    color: $colorPrimaryDark;
     font-weight: $fontWeight;
   }
   &__imgs {
@@ -22,12 +22,13 @@
     padding: 1.875rem;
     h2 {
       font-size: 1.25rem;
-      color: $colorSecondary;
+      color: $colorSecondaryDark;
       margin: 0.625rem 0rem 0.625rem 0rem;
     }
     img {
       border-radius: 1rem;
       margin: auto;
+      width: 90%;
     }
     img:hover {
       transform: scale(0.96);

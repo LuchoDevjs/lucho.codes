@@ -1,20 +1,12 @@
 @import "variables";
 
 :root {
-  background-color: $background;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: $colorPrimary;
 
   font-family: $fontFamily;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -100,15 +92,6 @@ q:after {
   content: none;
 }
 
-::-moz-selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
 form,
 input,
 textarea,
@@ -137,9 +120,9 @@ svg {
 }
 
 ::-moz-selection {
-  color: black;
+  color: $backgroundDark;
 }
 
 ::selection {
-  color: black;
+  color: $backgroundDark;
 }

@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Youtube Clone",
+    "description": "A personal website.",
+    "description2": "Developing a YouTube clone allowed me to put my knowledge of ReactJS into practice and improve my web application development skills. I learned a lot about how online video applications work and how various functionalities can be implemented on a platform like this.",
+    "videosNewIMG": "/assets/img/youtube-clone/videosNew.jpg",
+    "searchFeedIMG": "/assets/img/youtube-clone/SearchFeed.jpg",
+    "channelCardIMG": "/assets/img/youtube-clone/ChannelCard.jpg"
+  }
+]

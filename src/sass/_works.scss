@@ -4,7 +4,7 @@
   margin-top: 3.125rem;
   &__arrowLeft {
     margin-top: 1.25rem;
-    color: $colorSecondary;
+    color: $colorSecondaryDark;
   }
   &__information {
     display: flex;
@@ -13,13 +13,13 @@
     align-items: center;
     margin-bottom: 1.25rem;
     span {
-      color: $colorSecondary;
+      color: $colorSecondaryDark;
     }
     h2 {
       font-size: 1.25rem;
     }
     a:hover {
-      color: $colorSecondary;
+      color: $colorSecondaryDark;
       text-decoration: underline;
     }
   }
@@ -28,8 +28,6 @@
     font-weight: 600;
     border-radius: 0.125rem;
     padding: 0.1875rem;
-    color: $colorSecondary;
-    background-color: #4d3753;
   }
   &__paragraphs p {
     padding: 0rem 0.625rem 0rem 0.625rem;
@@ -40,7 +38,7 @@
   }
   &__tools {
     a {
-      color: $colorSecondary;
+      color: $colorSecondaryDark;
     }
     a:hover {
       text-decoration: underline;
@@ -64,7 +62,7 @@
     margin-right: 0.5rem;
   }
   &__iconLink {
-    color: $colorSecondary;
+    color: $colorSecondaryDark;
   }
   &__imgs {
     display: flex;

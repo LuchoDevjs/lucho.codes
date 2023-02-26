@@ -24,7 +24,7 @@
   &__icons {
     display: flex;
     justify-content: center;
-    color: $colorSecondary;
+    color: $colorSecondaryDark;
     margin-top: 4.375rem;
     margin-bottom: 1.25rem;
   }
@@ -50,12 +50,12 @@
         h1 {
           font-size: 1.25rem;
           letter-spacing: 0.375rem;
-          color: $colorPrimary;
+          color: $colorPrimaryDark;
           margin-bottom: 0.9375rem;
           font-weight: 300;
         }
         h2 {
-          color: $colorSecondary;
+          color: $colorSecondaryDark;
           font-size: 1.875rem;
           font-weight: 700;
         }
@@ -80,7 +80,7 @@
     justify-content: flex-end;
     margin: 1.875rem 1.5625rem 0rem 0rem;
     a {
-      color: $colorSecondary;
+      color: $colorSecondaryDark;
       width: auto;
     }
   }

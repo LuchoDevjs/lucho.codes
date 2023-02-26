@@ -1,56 +1,62 @@
 ---
-import ecommerceCoder from "../../js/data/works/ecommerceCoder.json";
+import youtubeClone from "../../js/data/works/youtubeClone.json";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md/index.js";
 import { RiExternalLinkFill } from "react-icons/ri/index.js";
 
-const [{ title, description, description2, itemDetailIMG, cartIMG, formIMG }] =
-  ecommerceCoder;
+const [
+  {
+    title,
+    description,
+    description2,
+    videosNewIMG,
+    searchFeedIMG,
+    channelCardIMG,
+  },
+] = youtubeClone;
 ---
 
 <div class="workContainer">
   <div class="workContainer__information">
     <a href="/">
-      <span>Works</span>
+      <span class="gradient__text">Works</span>
     </a>
     <MdOutlineKeyboardArrowRight
       className="workContainer__MdOutlineKeyboardArrowRight"
     />
     <h2>
       {title}
-      <span class="workContainer__year gradient__text">2022</span>
+      <span class="workContainer__year gradient__text">2023</span>
     </h2>
   </div>
   <div class="workContainer__paragraphs">
     <p>{description}</p>
-    <p>{description2}</p>
+    <p>
+      {description2}
+    </p>
   </div>
   <div class="workContainer__tools">
     <div class="workContainer__span">
       <span class="workContainer__badge">WEBSITE</span>
-      <a href="https://weblucho.vercel.app/" target="_blank">
-        https://weblucho.vercel.app/
+      <a href="https://youtube-clone-phi-two.vercel.app/" target="_blank">
+        https://youtube-clone-phi-two.vercel.app/
       </a>
       <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
     </div>
     <div class="workContainer__span">
       <span class="workContainer__badge">CODE</span>
-      <a
-        href="https://github.com/LuchoDevjs/PryFinalReactLuciano"
-        target="_blank"
-      >
-        https://github.com/LuchoDevjs/PryFinalReactLuciano/
+      <a href="https://github.com/LuchoDevjs/Youtube-Clone" target="_blank">
+        https://github.com/LuchoDevjs/Youtube-Clone
       </a>
       <span class="workContainer__iconLink"><RiExternalLinkFill /></span>
     </div>
-
     <p>
       <span class="workContainer__badge"> STACK</span>
-      Reactjs / React-icons / React-router-dom / ChakraUI / Formik / Vercel
+      Reactjs / React-icons / Material-UI / Axios / Vercel
     </p>
   </div>
   <div class="workContainer__imgs">
-    <img src={itemDetailIMG} alt="itemDetailIMG" />
-    <img src={cartIMG} alt="cartIMG" />
-    <img src={formIMG} alt="formIMG" />
+    <img src={videosNewIMG} alt="videosNewIMG" />
+    <img src={searchFeedIMG} alt="searchFeedIMG" />
+    <img src={channelCardIMG} alt="channelCardIMG" />
   </div>
 </div>

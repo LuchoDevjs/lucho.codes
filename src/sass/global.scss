@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&display=swap");
-@import "main";
-@import "skills";
-@import "itemsWorks";
-@import "about";
-@import "copyright";
-@import "education";
-@import "reset";
-@import "waves";
 @import "variables";
+@import "reset";
+@import "main";
+@import "about";
+@import "education";
+@import "itemsWorks";
+@import "skills";
+@import "copyright";
+@import "waves";
 body {
+  background-color: $backgroundDark;
+  color: $colorPrimaryDark;
   min-height: 100vh;
   font-size: 100%;
-  color: var(--color);
   hyphens: auto;
 }
 
@@ -25,6 +26,13 @@ body {
 }
 
 .container::-webkit-scrollbar-thumb {
-  background: #c175ff;
+  background: $colorSecondaryDark;
   border-radius: 0.3125rem;
+}
+
+.gradient__text {
+  background: $gradient-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -10,5 +10,11 @@
     "title": "Landing Page JS",
     "description": "A website of the Juana Sotelo agency to enroll in its micropigmentation courses.",
     "link": "/landingpagejs/"
+  },
+  {
+    "img": "/assets/img/youtube-clone/project2.jpg",
+    "title": "Youtube Clone",
+    "description": "A personal website.",
+    "link": "/youtubeclone/"
   }
 ]
