@@ -118,11 +118,3 @@ svg {
   display: block;
   fill: currentColor;
 }
-
-::-moz-selection {
-  color: $backgroundDark;
-}
-
-::selection {
-  color: $backgroundDark;
-}
