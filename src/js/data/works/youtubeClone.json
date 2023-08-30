@@ -1,8 +1,8 @@
 [
   {
     "title": "Youtube Clone",
-    "description": "A personal website.",
-    "description2": "Developing a YouTube clone allowed me to put my knowledge of ReactJS into practice and improve my web application development skills. I learned a lot about how online video applications work and how various functionalities can be implemented on a platform like this.",
+    "description": "Un sitio web personal.",
+    "description2": "Desarrollar un clon de YouTube me permitió poner en práctica mis conocimientos de ReactJS y mejorar mis habilidades de desarrollo de aplicaciones web. Aprendí mucho sobre cómo funcionan las aplicaciones de video en línea y cómo se pueden implementar diversas funcionalidades en una plataforma como esta.",
     "videosNewIMG": "/assets/img/youtube-clone/videosNew.jpg",
     "searchFeedIMG": "/assets/img/youtube-clone/SearchFeed.jpg",
     "channelCardIMG": "/assets/img/youtube-clone/ChannelCard.jpg"

@@ -2,19 +2,19 @@
   {
     "img": "/assets/img/ecommerceCoder/project2.jpg",
     "title": "Ecommerce CoderHouse",
-    "description": "A personal cap sales website.",
+    "description": "Un sitio web de venta de gorras a medida.",
     "link": "/ecommercecoder/"
   },
   {
     "img": "/assets/img/landingPageJS/project1.jpg",
     "title": "Landing Page JS",
-    "description": "A website of the Juana Sotelo agency to enroll in its micropigmentation courses.",
+    "description": "Un sitio web de la agencia Juana Sotelo para inscribirse en sus cursos de micropigmentación.",
     "link": "/landingpagejs/"
   },
   {
     "img": "/assets/img/youtube-clone/project2.jpg",
-    "title": "Youtube Clone",
-    "description": "A personal website.",
+    "title": "Clon de Youtube",
+    "description": "Un sitio web personal..",
     "link": "/youtubeclone/"
   }
 ]
