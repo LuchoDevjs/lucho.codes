@@ -69,7 +69,8 @@
         }
         ul {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
+          justify-content: center;
           align-items: center;
           gap: 2.8125rem;
         }
@@ -94,6 +95,12 @@
         &__img {
           img {
             width: 60%;
+          }
+        }
+        &__secondsection {
+          ul {
+            display: flex;
+            flex-direction: column;
           }
         }
       }
