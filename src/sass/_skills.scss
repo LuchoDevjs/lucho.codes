@@ -20,16 +20,16 @@
     flex-wrap: wrap;
   }
   $colors: (
-    css: #264de4,
-    js: #f7df1c,
-    nodejs: #68a063,
-    mongodb: #13a04b,
-    express: #fff,
-    reactjs: #61d9fb,
-    sass: #cd6799,
-    git: #f05033,
-    github: #fff,
-    redux: #624097,
+    css: $colorSecondaryDark,
+    js: $colorSecondaryDark,
+    nodejs: $colorSecondaryDark,
+    mongodb: $colorSecondaryDark,
+    express: $colorSecondaryDark,
+    reactjs: $colorSecondaryDark,
+    sass: $colorSecondaryDark,
+    git: $colorSecondaryDark,
+    github: $colorSecondaryDark,
+    redux: $colorSecondaryDark,
   );
 
   @each $name, $color in $colors {
