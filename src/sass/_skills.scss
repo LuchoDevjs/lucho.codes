@@ -21,15 +21,18 @@
   }
   $colors: (
     css: $colorSecondaryDark,
-    js: $colorSecondaryDark,
-    nodejs: $colorSecondaryDark,
-    mongodb: $colorSecondaryDark,
-    express: $colorSecondaryDark,
-    reactjs: $colorSecondaryDark,
     sass: $colorSecondaryDark,
+    js: $colorSecondaryDark,
     git: $colorSecondaryDark,
     github: $colorSecondaryDark,
+    nodejs: $colorSecondaryDark,
+    express: $colorSecondaryDark,
+    mongodb: $colorSecondaryDark,
+    reactjs: $colorSecondaryDark,
     redux: $colorSecondaryDark,
+    tailwindcss: $colorSecondaryDark,
+    nextjs: $colorSecondaryDark,
+    typescript: $colorSecondaryDark,
   );
 
   @each $name, $color in $colors {
